@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SearchTrack">
+
+        <EditText
+            android:id="@+id/nameBuscador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search track"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/nameBuscador"
+            app:srcCompat="@android:drawable/ic_search_category_default"
+            android:text="buscar"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cancion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:layout_below="@+id/buscar"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancion"
+        android:layout_marginTop="16dp"
+        android:text="Artist"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/addButtonObject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Track"
+        android:onClick="launchMainActivity"
+        android:textStyle="bold" />
+</RelativeLayout>
