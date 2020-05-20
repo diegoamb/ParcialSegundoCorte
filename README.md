@@ -1,0 +1,2 @@
+# ParcialSegundoCorte
+Entrega parcial
